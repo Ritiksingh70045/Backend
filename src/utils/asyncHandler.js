@@ -1,10 +1,10 @@
 // Way of using async and await for async operation Template
 
 const asyncHandler = (requestHandler) => {
-  return (req,res,next) => {
-    Promise.resolve(requestHandler(req,res,next)).catch((err) => next(err))
-  }
-}
+  return (req, res, next) => {
+    Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
+  };
+};
 
 // const asyncHandler = (fn) => async (req, res, next) => {   //! Higher Order Function use
 //   try {
@@ -16,3 +16,4 @@ const asyncHandler = (requestHandler) => {
 //     });
 //   }
 // };
+export { asyncHandler };

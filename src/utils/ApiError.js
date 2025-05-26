@@ -18,5 +18,4 @@ class ApiError extends Error {
     }
   }
 }
-console.log(Error);
 export { ApiError };
