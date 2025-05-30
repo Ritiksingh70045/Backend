@@ -1,3 +1,4 @@
+import "../config/env.config.js";
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 

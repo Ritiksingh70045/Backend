@@ -1,7 +1,7 @@
-import { Router } from "express";
+import express from "express";
 import { registerUser } from "../controllers/user.controller.js";
-import upload from "../middlewares/multer.middleware.js";
-const router = Router();
+import {upload} from "../middlewares/multer.middleware.js";
+const router = express.Router();
 
 router.route("/register").post(
   upload.fields([
